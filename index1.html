@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Phim Hoạt Hình Trẻ Em</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. HEADER (Cố định ở đầu trang) -->
+    <header class="main-header">
+        <div class="logo">
+            <h1><span>HoạtHình</span>KIDS</h1>
+        </div>
+        <nav class="head-link">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Mới cập nhật</a></li>
+                <li><a href="#">Xem nhiều nhất</a></li>
+                <li><a href="#">Thể loại</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. CONTENT (Bố cục 2 cột Left Content & Right Content) -->
+    <div class="content-container">
+        
+        <!-- Left Content: Menu danh sách video -->
+        <aside class="left-content">
+            <h3>Danh Sách Phim</h3>
+            <ul class="video-playlist">
+                <li class="active">
+                    <a href="#video1">
+                        <img src="https://picsum.photos/id/1018/80/50" alt="Phim 1">
+                        <span>Tập 1: Chuyến Phiêu Lưu Kỳ Diệu</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#video2">
+                        <img src="https://picsum.photos/id/1025/80/50" alt="Phim 2">
+                        <span>Tập 2: Những Người Bạn Nhỏ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#video3">
+                        <img src="https://picsum.photos/id/1069/80/50" alt="Phim 3">
+                        <span>Tập 3: Biển Cả Bao La</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#video4">
+                        <img src="https://picsum.photos/id/1074/80/50" alt="Phim 4">
+                        <span>Tập 4: Bí Mật Rừng Xanh</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Right Content: Khu vực phát video -->
+        <main class="right-content">
+            <div class="main-video-player">
+                <h2>Tập 1: Chuyến Phiêu Lưu Kỳ Diệu (Thuyết Minh HD)</h2>
+                
+                <!-- Sử dụng thẻ <video> HTML5 -->
+                <div class="video-box">
+                    <video controls poster="https://picsum.photos/id/1018/800/450">
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Trình duyệt của bạn không hỗ trợ thẻ video HTML5.
+                    </video>
+                </div>
+
+                <div class="video-info">
+                    <p><strong>Lượt xem:</strong> 125,400 lượt xem • <strong>Chất lượng:</strong> Full HD 1080p</p>
+
+                    <h3>Video Nổi Bật Tải Từ YouTube (Sử dụng <iframe>)</h3>
+                    <!-- Nhúng video YouTube bằng <iframe> -->
+                    <div class="iframe-container">
+                        <iframe 
+                            src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <p class="description">
+                        Nội dung phim được chọn lọc kỹ lưỡng, đảm bảo tính giáo dục và an toàn dành riêng cho trẻ em.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <!-- 3. FOOTER -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Website Phim Hoạt Hình Trẻ Em. Bản quyền thuộc về HoạtHìnhKIDS.</p>
+        <p>Nội dung an toàn, không quảng cáo, dành riêng cho thiếu nhi.</p>
+    </footer>
+
+</body>
+</html>
